@@ -82,13 +82,10 @@ console.log(message);
 //   message = CANCELED_BY_USER;
 // } else {
 //   country = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase();
-//   console.log(country);
-//   console.log(countryName); 
 //   switch (country) {
   
 //     case CHINA:
 //       price = 100;
-//       console.log(message);
 //       break;
 
 //     case AUSTRALIA:

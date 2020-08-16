@@ -20,18 +20,13 @@ let message;
 const orderPieces = prompt('Сколько дроидов Вы хотите купить?'); 
 // 3. Узнать цену за количество дройдов
 const totalPrice = pricePerDroid * orderPieces;
-// console.log(totalPrice);
 // 4.  Сравнить введеный результат.
 if(orderPieces === null) {
     message = 'Отменено пользователем ';
-    // console.log(message);
-}
-else if(totalPrice  <= credits) {
+} else if(totalPrice  <= credits) {
      message = `Вы купили ${orderPieces} дроидов, на счету осталось ${credits - totalPrice} кредитов.`;
-    // console.log(message);
 } else if(credits  < totalPrice) {
     message = 'Недостаточно средств на счету!';
-    // console.log(message)
 } 
 // 5. Выводим в консоль.
  console.log(message);
